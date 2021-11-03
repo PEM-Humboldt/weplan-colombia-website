@@ -26,7 +26,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="/assets/css/main.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
 <div id="app">
@@ -68,7 +68,7 @@
                             <div id="results-plot"></div>
                         </div>
                         <div class="col-lg-3 d-flex align-items-center">
-                            <img id="legend_plot" src="cost_legend_v_nr.jpg" alt="legend" style="height: 200px;">
+                            <img id="legend_plot" src="assets/images/legends/cost_legend_v_nr.jpg" alt="legend" style="height: 200px;">
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                     Area available for forest restoration
                 </h3>
                 <p class="col-lg-8 offset-lg-2 mb-5" style="font-size:1.1rem;">Area deemed available for forest restoration. Areas in purple indicate the 1 km2 planning units that were assessed to have potential for forest restoration given (see Methods for details). The shading of cells from light to dark purple is proportional to the area within each planning unit available for forest restoration.</p>
-                <p class="col-lg-8 offset-lg-2 mb-5"><img src="COL_v002/available_v002.jpg" alt="Available for restoration" width=400></p>
+                <p class="col-lg-8 offset-lg-2 mb-5"><img src="assets/images/available_v002.jpg" alt="Available for restoration" width=400></p>
                 <h3 class="col-lg-8 offset-lg-2">
                     Interpretation
                 </h3>
@@ -114,7 +114,7 @@
             newImageElement.id = 'results-map-image';
 
             resultsMapImageElement.replaceWith(newImageElement);
-            newImageElement.src = "COL_v002" + '/' + imageName;
+            newImageElement.src = "assets/images" + '/' + imageName;
         }
 
         function selectDataPoint(source, dataId, imageName, selectedPointIndex, selectedTraceIndex) {
@@ -295,27 +295,27 @@
             if (targetSelected == 'data_target_1.csv'){
                 selectedData = data1;
                 selectedRowData = originalRowData1;
-                $('#legend_plot').attr('src', 'cost_legend_v_t1_nr.jpg');
+                $('#legend_plot').attr('src', 'assets/images/legends/cost_legend_v_t1_nr.jpg');
             } else if (targetSelected == 'data_target_2.csv'){
                 selectedData = data2;
                 selectedRowData = originalRowData2;
-                $('#legend_plot').attr('src', 'cost_legend_v_t2_nr.jpg');
+                $('#legend_plot').attr('src', 'assets/images/legends/cost_legend_v_t2_nr.jpg');
             } else if (targetSelected == 'data_target_3.csv'){
                 selectedData = data3;
                 selectedRowData = originalRowData3;
-                $('#legend_plot').attr('src', 'cost_legend_v_t3_nr.jpg');
+                $('#legend_plot').attr('src', 'assets/images/legends/cost_legend_v_t3_nr.jpg');
             } else if (targetSelected == 'data_target_4.csv'){
                 selectedData = data4;
                 selectedRowData = originalRowData4;
-                $('#legend_plot').attr('src', 'cost_legend_v_t4_nr.jpg');
+                $('#legend_plot').attr('src', 'assets/images/legends/cost_legend_v_t4_nr.jpg');
             } else if (targetSelected == 'data_target_5.csv'){
                 selectedData = data5;
                 selectedRowData = originalRowData5;
-                $('#legend_plot').attr('src', 'cost_legend_v_t5_nr.jpg');
+                $('#legend_plot').attr('src', 'assets/images/legends/cost_legend_v_t5_nr.jpg');
             } else {
                 selectedData = data0;
                 selectedRowData = originalRowData0;
-                $('#legend_plot').attr('src', 'cost_legend_v_nr.jpg');
+                $('#legend_plot').attr('src', 'assets/images/legends/cost_legend_v_nr.jpg');
             }
 
             Plotly.newPlot(resultsPlotElement, selectedData, layout, config);
