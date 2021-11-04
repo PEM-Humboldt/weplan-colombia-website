@@ -2,7 +2,7 @@
 
 # Reforestación de bosques
 
-Esta herramienta muestra datos de escenarios de restauración forestal y apoya a la toma de decisiones.
+Plataforma para el soporte de toma de decisiones en restauración. Se muestra datos de escenarios de restauración forestal.
 
 La versión actual es 0.1.0.
 
@@ -26,7 +26,7 @@ Ninguno antes de abrir el archivo .HTML. Se puede abrir sin servidor web.
 _Ingeniería de Datos y Desarrollo, Programa de Evaluación y Monitoreo de la Biodiversidad - Instituto Humboldt Colombia_
 
 ## Licencia
-Este proyecto está bajo la licencia [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt).
+Aún no especificada.
 
 ## Reconocimientos
 
@@ -39,7 +39,7 @@ Este trabajo está inspirado en el sitio web para Colombia de [WePlan](http://we
 
 # Forest restoration
 
-This tool displays data from forest restoration scenarios and supports decision-making.
+Platform to support decision-making in restoration. Data from forest restoration scenarios is shown.
 
 The current version is 0.1.0.
 
@@ -63,7 +63,7 @@ None before opening the .HTML file. It can be opened without a web server.
 _Data and Development Engineering, Biodiversity Assessment and Monitoring Program - Instituto Humboldt Colombia_
 
 ## License
-This project is licensed under [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt).
+Not yet specified.
 
 ## Acknowledgments
 
