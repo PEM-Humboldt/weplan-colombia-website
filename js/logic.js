@@ -148,27 +148,21 @@ function changeTarget(targetSelected){
     if (targetSelected == 'data_target_1.csv'){
         selectedData = data1;
         selectedRowData = originalRowData1;
-        $('#legend_plot').attr('src', 'assets/images/legends/cost_legend_v_t1_nr.jpg');
     } else if (targetSelected == 'data_target_2.csv'){
         selectedData = data2;
         selectedRowData = originalRowData2;
-        $('#legend_plot').attr('src', 'assets/images/legends/cost_legend_v_t2_nr.jpg');
     } else if (targetSelected == 'data_target_3.csv'){
         selectedData = data3;
         selectedRowData = originalRowData3;
-        $('#legend_plot').attr('src', 'assets/images/legends/cost_legend_v_t3_nr.jpg');
     } else if (targetSelected == 'data_target_4.csv'){
         selectedData = data4;
         selectedRowData = originalRowData4;
-        $('#legend_plot').attr('src', 'assets/images/legends/cost_legend_v_t4_nr.jpg');
     } else if (targetSelected == 'data_target_5.csv'){
         selectedData = data5;
         selectedRowData = originalRowData5;
-        $('#legend_plot').attr('src', 'assets/images/legends/cost_legend_v_t5_nr.jpg');
     } else {
         selectedData = data0;
         selectedRowData = originalRowData0;
-        $('#legend_plot').attr('src', 'assets/images/legends/cost_legend_v_nr.jpg');
     }
 
     Plotly.newPlot(resultsPlotElement, selectedData, layout, config);
