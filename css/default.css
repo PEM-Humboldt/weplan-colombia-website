@@ -6,7 +6,7 @@
 }
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 14px; padding: 0; margin: 0; height: 100%;}
+body, html { font-size: 14px; padding: 0; margin: 0; height: 100%; font-family: 'lato';}
 
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
@@ -51,7 +51,7 @@ h1,h2,h3,h4,h5,h6 {
 .box {
   background-color: #fff;
   color: #424242;
-  padding: 20px;
+  padding: 15px;
   overflow-y: scroll;
   border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -91,6 +91,42 @@ footer {
   grid-row: row1-start / row2-end;
 }
 
+.a img {
+	max-width:100%;
+	max-height:90%;
+	display: block;
+	margin: 0 auto;
+}
+
+.b select {
+	min-width: 100%;
+	padding: 7px 5px;
+	margin-bottom: 5px;
+	color: #909090;
+	border-color: #606060;
+	font-family: 'lato', sans-serif;
+}
+
+.csv {
+	width: 30px;
+	height: 33px;
+	background: none;
+	border: none;
+	content:  '';
+	background: url(../img/csv.svg) center no-repeat;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+#results-plot {
+	width: 100%;
+}
+
+.ag-theme-balham {
+	width: 100%;
+	height: 400px;
+}
+
 header h1 a {
 	margin-left: 20px;
 	color: #fff;
@@ -113,6 +149,17 @@ footer .logos {
 footer a {
 	font-size: 1.2rem;
 	color: #fff;
+}
+
+.boxtitle {
+	text-transform: uppercase;
+	display: block;
+	color: tomato;
+	font-weight: 400;
+	font-size: 1.3rem;
+	padding: 0 5px 10px;
+	border-bottom:  1px solid tomato;
+	margin-bottom: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -152,7 +199,7 @@ footer a {
 	  grid-template-columns: [col1-start] 1fr [col1-end];
 	  grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row4-start] auto [row4-end];
 	}
-	.a {
+	.d {
 	  grid-column: col1-start;
 	  grid-row: row4-start;
 	}
@@ -164,7 +211,7 @@ footer a {
 		grid-column: col1-start;
 	  grid-row: row3-start;
 	}
-	.d {
+	.a {
 	  grid-column: col1-start;
 	  grid-row: row1-start;
 	}

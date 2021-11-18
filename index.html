@@ -31,7 +31,7 @@
 				</h3>
 			</header>
 			<div class="innerwrapper">
-				<div class="box a">
+				<div class="box d">
 					WePlan - Forests is a spatially explicit, forest restoration planning tool that evaluates a range of alternative scenarios, reporting the benefits, costs and spatial distribution of restoration priorities for each one. It considers two objectives: (i) climate change mitigation benefit, estimated as the change in carbon sequestration that would arise from forest restoration, and (ii) biodiversity conservation benefit, estimated as the average reduction in local (national) extinction risk among all forest-associated species. The analysis also considers opportunity and implementation costs of forest restoration. Analyses occur at a 1 km2 resolution on a national basis, for countries containing tropical and subtropical forests within +/- 25 degrees latitude.</p>
 					Four main types of analysis are presented: (i) optimal solutions that maximise cost-effectiveness (benefit / cost); (ii) optimal solutions that maximise benefit, ignoring costs; (iii) optimal reference solutions that minimise total costs, ignoring benefits; and (iv) reference solutions that randomise restoration. The first two analyses also involve evaluation of the trade-off between climate change mitigation and biodiversity conservation benefits. Planning solutions were developed for five area targets, representing 10, 20, 30, 40, and 50% of the area available for forest restoration. <b>For a detailed description of the methods, please return to the previous page and download the PDF report associated with this analysis</b>.</p>
 					The points in the graph are colour-coded to represent the overall cost of the solution (opportunity cost + establishment cost). Areas selected for restoration are shown in red in the map, though the area of forest restored in each map is variable (maximum: 1 km2). The dark grey areas represent other areas in the country that were not selected, and the light grey areas correspond to terrestrial areas outside of the country. White areas are ocean. The table contains further details on the costs and benefits among the solutions and can be downloaded as a comma-delimited text file (.csv).</p>
@@ -39,6 +39,8 @@
 					<b>Biodiversity conservation benefit units:</b> mean percent reduction in extinction risk among all species<br><b>Climate change mitigation benefit:</b> carbon sequestered (Gt)<br><b>Costs: </b>USD</p>
 				</div>
 				<div class="box b">
+					<div class="boxtitle">título de gráfica</div>
+					<p>Seleccione una meta en el menú desplegable</p>
 					<select id="target" name="target" onchange="changeTarget(this.value)">
 						<option value="data.csv" selected>All targets</option>
 						<option value="data_target_1.csv">Target 1 - 10%</option>
@@ -47,20 +49,15 @@
 						<option value="data_target_4.csv">Target 4 - 40%</option>
 						<option value="data_target_5.csv">Target 5 - 50%</option>
 					</select>
-					<div>
-						<div id="results-plot"></div>
-					</div>
-					
+					<div id="results-plot"></div>
 				</div>
 				<div class="box c">
-					<button id="export-to-csv-btn" title="Export to CSV">
-                        <i title="Export to CSV">
-							Export to CSV
-						</i>
+					<button id="export-to-csv-btn" class="csv" title="Export to CSV">
                     </button>
-					<div id="results-grid" style="height: 400px; width: 100%;" class="ag-theme-balham"></div>
+					<div id="results-grid" class="ag-theme-balham"></div>
 				</div>
-				<div class="box d">
+				<div class="box a">
+					<div class="boxtitle">título de mapa</div>
 					<div id="results-map-image"></div>
 				</div>
 			</div>
@@ -69,9 +66,9 @@
 					<a href="http://humboldt.org.co"><img src="img/humboldt.png"></a>
 					<a href="https://www.iis-au.org/"><img src="img/IIS.png"></a>
 				</div>
-				<nav>
+<!-- 				<nav>
 					<a href="http://biotablero.humboldt.org.co/" class="">BioTablero</a>
-				</nav>
+				</nav> -->
 			</footer>
 			<script src="js/logic.js"></script>
 		</div>

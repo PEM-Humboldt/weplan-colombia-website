@@ -1,7 +1,6 @@
 function loadMapImage(imageName) {
     let resultsMapImageElement = document.getElementById('results-map-image');
     let newImageElement = document.createElement('img');
-    newImageElement.height = 400;
     newImageElement.id = 'results-map-image';
 
     resultsMapImageElement.replaceWith(newImageElement);
@@ -99,13 +98,18 @@ let layout = {
     yaxis: {
         title: "mean extinction risk reduction (%)",
     },
-    height: 400,
+    height: 700,
     margin: {
-        l: 75,
+        l: 45,
         r: 25,
-        b: 75,
+        b: 35,
         t: 25,
         pad: 4
+    },
+    legend: {
+        orientation: 'h',
+        xanchor: 'left',
+        y: -0.4,
     },
 };
 let config = {
@@ -125,7 +129,14 @@ resultsPlotElement.on('plotly_click', plotlyOnSelection);
 // AgGrid
 let gridOptions = {
     columnDefs: [
-{"headerName":"scenario","field":"scenario"},{"headerName":"restored area (ha)","field":"restored area (ha)"},{"headerName":"carbon sequestered (Gt)","field":"carbon sequestered (Gt)"},{"headerName":"mean extinction risk reduction (%)","field":"mean extinction risk reduction (%)"},{"headerName":"opportunity cost (USD billion)","field":"opportunity cost (USD billion)"},{"headerName":"establishment cost (USD billion)","field":"establishment cost (USD billion)"},{"headerName":"total cost (USD billion)","field":"total cost (USD billion)"},{"headerName":"carbon weight","field":"carbon weight"},{"headerName":"biodiversity weight","field":"biodiversity weight"},{"headerName":"version","field":"version"}],
+        {"headerName":"scenario","field":"scenario", "width": "200", "minWidth": "50", "maxWidth": "200"},
+        {"headerName":"restored area (ha)","field":"restored area (ha)", "width": "100" },
+        {"headerName":"carbon sequestered (Gt)","field":"carbon sequestered (Gt)", "width": "100" },
+        {"headerName":"mean extinction risk reduction (%)","field":"mean extinction risk reduction (%)", "width": "100" },
+        {"headerName":"opportunity cost (USD billion)","field":"opportunity cost (USD billion)", "width": "100" },
+        {"headerName":"establishment cost (USD billion)","field":"establishment cost (USD billion)", "width": "100" },
+        {"headerName":"total cost (USD billion)","field":"total cost (USD billion)", "width": "100" },{"headerName":"carbon weight","field":"carbon weight", "width": "100" },
+        {"headerName":"biodiversity weight","field":"biodiversity weight", "width": "100" },{"headerName":"version","field":"version", "width": "100" }],
     rowData: originalRowData0,
     rowSelection: 'single',
     onRowSelected: agGridOnRowSelected,
