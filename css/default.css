@@ -140,12 +140,6 @@ header h3 {
 	letter-spacing: 2px;
 }
 
-footer .logos {
-	display: flex;
-	align-items: center;
-	gap: 30px;
-}
-
 footer a {
 	font-size: 1.2rem;
 	color: #fff;
