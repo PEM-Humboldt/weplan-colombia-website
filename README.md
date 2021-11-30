@@ -26,7 +26,7 @@ Ninguno antes de abrir el archivo .HTML. Se puede abrir sin servidor web.
 _Ingeniería de Datos y Desarrollo, Programa de Evaluación y Monitoreo de la Biodiversidad - Instituto Humboldt Colombia_
 
 ## Licencia
-Aún no especificada.
+Licencia MIT (MIT) 2021 - [Instituto de Investigación de Recursos Biológicos Alexander von Humboldt](http://humboldt.org.co). Por favor revisar el archivo [LICENSE.md](LICENSE.md) para más detalles.
 
 ## Reconocimientos
 
@@ -63,8 +63,8 @@ None before opening the .HTML file. It can be opened without a web server.
 _Data and Development Engineering, Biodiversity Assessment and Monitoring Program - Instituto Humboldt Colombia_
 
 ## License
-Not yet specified.
+The MIT License (MIT) 2021 - [Instituto de Investigación de Recursos Biológicos Alexander von Humboldt](http://humboldt.org.co). Please have a look at the [LICENSE.md](LICENSE.md) file for more details.
 
 ## Acknowledgments
 
-This work is inspired by the [WePlan](http://weplan-forests.org/flrp/exploreopt.php?analysis=COL_v002) website for Colombia.
+This work is inspired on the [WePlan](http://weplan-forests.org/flrp/exploreopt.php?analysis=COL_v002) website for Colombia.
