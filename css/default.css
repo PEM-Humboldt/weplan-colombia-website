@@ -156,6 +156,15 @@ footer a {
 	margin-bottom: 10px;
 }
 
+.svg-iss {
+	height: 63px;
+}
+
+.svg-weplan {
+	height: 60px;
+	margin-left: 25px;
+}
+
 @media (max-width: 1024px) {
 	.wrapper {
 		height: auto;
