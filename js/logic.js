@@ -7733,52 +7733,6 @@ function twoDecimals(toTransform){
 
 // Plotly
 
-Plotly.d3.csv("data/targets.csv", function(data){ processData(data) } );
-	
-let testData = [];
-function processData(allRows) {
-   allRows.forEach((e)=>{
-      console.log(e["dataId"]);/*: 125,
-      "traceIndex": 17,
-      "pointIndex": 0,
-      "Escenario": "Mínimo costo (Meta 6)",
-      "Carbón (Gt)": 2.489350952,
-      "Biodiversidad (%)": "18.0398213",
-      "Costo total (USD)": 19.569568931,
-      "Costo de establecimiento (USD)": 15.812180377,
-      "Costo de oportunidad (USD)": 3.757388554,
-      "Peso Carbón": null,
-      "Peso Biodiversidad": null,
-      "version": "v14",
-      "MapImage": "scen_mincost_target_6_v0.1_col_v14.png",
-      "Highlight": 1,
-      "HEXcode": "#1A9CE2"*/
-   });
-
-	console.log(allRows);
-   testData = allRows;
-   console.log('testData: ',testData);
-   console.log('data0: ', data0);
-}
-
-// Function to handle responsive witdh
-function responsivePlot(id){
-   var d3 = Plotly.d3;
-
-   var parent_width = $("#"+id).parent().width()
-   var gd3 = d3.select(`div[id=${id}]`)
-       .style({
-           width: parent_width - 10,
-           height: parent_height - 10,
-       });
-   return gd3.node();
-  }
-
-  window.addEventListener('resize', function(){
-   Plotly.Plots.resize( responsivePlot('results-plot') );
-   //Plotly.Plots.resize( responsivePlot('plot-container.plotly') );
-  })
-
 let resultsPlotElement = document.getElementById('results-plot');
 // let data = [];
 let layout = {
