@@ -50,7 +50,6 @@ function agGridOnRowSelected(event) {
    gridOptions.api.ensureIndexVisible(node.rowIndex);
 }
 
-
 function twoDecimals(toTransform){
    let transformed = toTransform;
    transformed.forEach((a) => {
@@ -61,7 +60,6 @@ function twoDecimals(toTransform){
       a["Peso Biodiversidad"] = Number(a["Peso Biodiversidad"]).toFixed(2);
       a["Costo de oportunidad (USD)"] = Number(a["Costo de oportunidad (USD)"]).toFixed(2);
       a["Peso Carbón"] = Number(a["Peso Carbón"]).toFixed(2);
-      console.log(a["Carbón (Gt)"]);
       console.log(a);
    });
    return transformed;
@@ -119,18 +117,6 @@ function twoDecimals(toTransform){
         "scen_tradeoffs_ce_arearestored_target_1_weight_8_v0.1_col_v14.png",
         "scen_tradeoffs_ce_arearestored_target_1_weight_9_v0.1_col_v14.png",
         "scen_tradeoffs_ce_arearestored_target_1_weight_10_v0.1_col_v14.png"
-     ],
-     "hex": [
-        "#8A32F2",
-        "#8E2EF1",
-        "#902DF1",
-        "#912CF1",
-        "#932BF1",
-        "#9429F1",
-        "#9628F1",
-        "#9727F0",
-        "#9926F0",
-        "#9F20F0"
      ],
      "dataId": [
         0,
@@ -212,18 +198,6 @@ function twoDecimals(toTransform){
         "scen_tradeoffs_ce_arearestored_target_2_weight_8_v0.1_col_v14.png",
         "scen_tradeoffs_ce_arearestored_target_2_weight_9_v0.1_col_v14.png",
         "scen_tradeoffs_ce_arearestored_target_2_weight_10_v0.1_col_v14.png"
-     ],
-     "hex": [
-        "#6B4DF6",
-        "#6E4AF5",
-        "#7247F5",
-        "#7544F4",
-        "#7A40F4",
-        "#7D3DF3",
-        "#7F3BF3",
-        "#8338F3",
-        "#8437F3",
-        "#8B31F2"
      ],
      "dataId": [
         10,
@@ -7386,8 +7360,6 @@ function twoDecimals(toTransform){
      "Peso Biodiversidad": 1,
      "version": "v14",
      "MapImage": "scen_tradeoffs_ce_arearestored_target_6_weight_2_v0.1_col_v14.png",
-     "Highlight": 1,
-     "HEXcode": "#10C389"
    },
    {
      "dataId": 51,
@@ -7776,14 +7748,14 @@ resultsPlotElement.on('plotly_click', plotlyOnSelection);
 // AgGrid
 let gridOptions = {
    columnDefs: [
-       {"headerName":"Escenario","field":"Escenario", "headerTooltip":"Escenario", "width": "170", "minWidth": "50", "maxWidth": "170"},
-       {"headerName":"Carbón (Gt)","field":"Carbón (Gt)", "headerTooltip":"Carbón (Gt)", "width": "100" },
-       {"headerName":"Biodiversidad (%)","field":"Biodiversidad (%)", "headerTooltip":"Biodiversidad (%)", "width": "120" },
-       {"headerName":"Costo de oportunidad (USD)","field":"Costo de oportunidad (USD)", "headerTooltip":"Costo de oportunidad (USD)", "width": "100" },
-       {"headerName":"Costo de establecimiento (USD)","field":"Costo de establecimiento (USD)", "headerTooltip":"Costo de establecimiento (USD)", "width": "100" },
-       {"headerName":"Costo total (USD)","field":"Costo total (USD)", "headerTooltip":"Costo total (USD)", "width": "110" },
-       {"headerName":"Peso Carbón","field":"Peso Carbón", "headerTooltip":"Peso Carbón", "width": "100" },
-       {"headerName":"Peso Biodiversidad","field":"Peso Biodiversidad", "headerTooltip":"Peso Biodiversidad", "width": "100" }],
+       {"headerName":"Escenario","field":"Escenario", "headerTooltip":"Escenario", "width": 170, "minWidth": "50", "maxWidth": "170"},
+       {"headerName":"Carbón (Gt)","field":"Carbón (Gt)", "headerTooltip":"Carbón (Gt)", "width": 100 },
+       {"headerName":"Biodiversidad (%)","field":"Biodiversidad (%)", "headerTooltip":"Biodiversidad (%)", "width": 120 },
+       {"headerName":"Costo de oportunidad (USD)","field":"Costo de oportunidad (USD)", "headerTooltip":"Costo de oportunidad (USD)", "width": 100 },
+       {"headerName":"Costo de establecimiento (USD)","field":"Costo de establecimiento (USD)", "headerTooltip":"Costo de establecimiento (USD)", "width": 100 },
+       {"headerName":"Costo total (USD)","field":"Costo total (USD)", "headerTooltip":"Costo total (USD)", "width": 110 },
+       {"headerName":"Peso Carbón","field":"Peso Carbón", "headerTooltip":"Peso Carbón", "width": 100 },
+       {"headerName":"Peso Biodiversidad","field":"Peso Biodiversidad", "headerTooltip":"Peso Biodiversidad", "width": 100 }],
    rowData: originalRowData0,
    rowSelection: 'single',
    onRowSelected: agGridOnRowSelected,
