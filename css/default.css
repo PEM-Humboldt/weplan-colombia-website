@@ -218,4 +218,12 @@ footer a {
 	  grid-column: col1-start;
 	  grid-row: row1-start;
 	}
+	.svg-iss {
+		height: 40px;
+	}
+	
+	.svg-weplan {
+		height: 38px;
+		margin-left: 5px;
+	}
 }
