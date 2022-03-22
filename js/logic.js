@@ -50,6 +50,10 @@ function agGridOnRowSelected(event) {
 }
 
 // IAvH - Customizations - Start
+function addColorColumn(toTransform){
+   let transformed = toTransform;
+   return transformed;
+}
 function twoDecimals(toTransform){
    let transformed = toTransform;
    transformed.forEach((a) => {
@@ -118,7 +122,7 @@ let gridOptions = {
        {"headerName":"Costo total (USD)","field":"Costo total (USD)", "headerTooltip":"Costo total (USD)", "width": 110 },
        {"headerName":"Peso Carbón","field":"Peso Carbón", "headerTooltip":"Peso Carbón", "width": 100 },
        {"headerName":"Peso Biodiversidad","field":"Peso Biodiversidad", "headerTooltip":"Peso Biodiversidad", "width": 100 }],
-   rowData: originalRowData0,
+   rowData: addColorColumn(twoDecimals(originalRowData0)),
    rowSelection: 'single',
    onRowSelected: agGridOnRowSelected,
    enableBrowserTooltips: true,
@@ -162,7 +166,7 @@ function changeTarget(targetSelected){
 
    Plotly.newPlot(resultsPlotElement, selectedData, layout, config);
    resultsPlotElement.on('plotly_click', plotlyOnSelection);
-   gridOptions.api.setRowData(twoDecimals(selectedRowData));
+   gridOptions.api.setRowData(addColorColumn(twoDecimals(selectedRowData)));
    selectDataPoint(
    'initial',
    0);
