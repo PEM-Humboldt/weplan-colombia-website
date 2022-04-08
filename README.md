@@ -36,7 +36,7 @@ Este trabajo está inspirado en el sitio web para Colombia de [WePlan](http://we
 
 El proyecto se realiza por parte del Instituto Humboldt en el [marco de la meta de siembra de 180 millones de árboles “Sembrar nos une” del gobierno nacional](http://humboldt.org.co/es/boletines-y-comunicados/item/1676-restaurar-ecosistemas-estrategicos-la-apuesta-del-instituto-humboldt-en-la-meta-de-180-millones-de-arboles)
 
-Los insumos de información recibidos se encuentran transformados en el archivo [var.js](/main/js/data/var.js).
+Los insumos de información recibidos se encuentran transformados en el archivo [var.js](/js/data/var.js).
 
 ---
 ---
@@ -79,4 +79,4 @@ This work is inspired on the [WePlan](http://weplan-forests.org/flrp/exploreopt.
 
 The project is done by the Humboldt Institute within the [framework of the goal of planting 180 million trees "Sembrar nos une" of the national government](http://humboldt.org.co/es/boletines-y-comunicados /item/1676-restoring-strategic-ecosystems-the-commitment-of-the-humboldt-institute-in-the-goal-of-180-million-trees)
 
-The information inputs received are transformed into the file [var.js](/main/js/data/var.js).
+The information inputs received are transformed into the file [var.js](/js/data/var.js).
