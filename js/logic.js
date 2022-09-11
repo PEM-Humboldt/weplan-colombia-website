@@ -124,16 +124,18 @@ let gridOptions = {
    columnDefs: [
       {"headerName":"Color","field":"RBGcode", "headerTooltip":"Color en el gráfico", "width": 10, "cellStyle": cellStyle},
       {"headerName":"Escenario","field":"Escenario", "headerTooltip":"Escenario", "width": 170, "minWidth": 50, "maxWidth": 170},
-      {"headerName":"Carbono (Gt)","field":"Carbono (Gt)", "headerTooltip":"Carbono (Gt)", "width": 100 },
-      {"headerName":"Biodiversidad (%)","field":"Biodiversidad (%)", "headerTooltip":"Biodiversidad (%)", "width": 120 },
-      {"headerName":"Costo de oportunidad (USD)","field":"Costo de oportunidad (USD)", "headerTooltip":"Costo de oportunidad (USD)", "width": 100 },
-      {"headerName":"Costo de establecimiento (USD)","field":"Costo de establecimiento (USD)", "headerTooltip":"Costo de establecimiento (USD)", "width": 100 },
-      {"headerName":"Costo total (USD)","field":"Costo total (USD)", "headerTooltip":"Costo total (USD)", "width": 110 },
-      {"headerName":"Peso Carbono","field":"Peso Carbono", "headerTooltip":"Peso Carbono", "width": 100 },
-      {"headerName":"Peso Biodiversidad","field":"Peso Biodiversidad", "headerTooltip":"Peso Biodiversidad", "width": 100 }],
+      {"headerName":"Carbono (Gt)","field":"Carbono (Gt)", "headerTooltip":"Carbono (Gt)", "width": 120 },
+      {"headerName":"Biodiversidad (%)","field":"Biodiversidad (%)", "headerTooltip":"Biodiversidad (%)", "width": 150 },
+      {"headerName":"Costo de oportunidad (USD)","field":"Costo de oportunidad (USD)", "headerTooltip":"Costo de oportunidad (USD)"},
+      {"headerName":"Costo de establecimiento (USD)","field":"Costo de establecimiento (USD)", "headerTooltip":"Costo de establecimiento (USD)", "width": 220},
+      {"headerName":"Costo total (USD)","field":"Costo total (USD)", "headerTooltip":"Costo total (USD)", "width": 150},
+      {"headerName":"Peso Carbono","field":"Peso Carbono", "headerTooltip":"Peso Carbono", "width": 120},
+      {"headerName":"Peso Biodiversidad","field":"Peso Biodiversidad", "headerTooltip":"Peso Biodiversidad", "width": 150},
+      {"headerName":"Archivo","field":"MapImage", "headerTooltip":"Archivo", "width": 450}],
    rowData: twoDecimals(originalRowData0),
    rowSelection: 'single',
    onRowSelected: agGridOnRowSelected,
+
    enableBrowserTooltips: true,
 };
 let resultsGridDiv = document.querySelector('#results-grid');
