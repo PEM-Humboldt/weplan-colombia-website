@@ -57,13 +57,13 @@ const rgbStringToArray = rgb => rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/).sp
 function twoDecimals(toTransform){
    let transformed = toTransform;
    transformed.forEach((a) => {
-      a["Carbón (Gt)"] = Number(a["Carbón (Gt)"]).toFixed(2);
+      a["Carbono (Gt)"] = Number(a["Carbono (Gt)"]).toFixed(2);
       a["Biodiversidad (%)"] = Number(a["Biodiversidad (%)"]).toFixed(2);
       a["Costo de establecimiento (USD)"] = Number(a["Costo de establecimiento (USD)"]).toFixed(2);
       a["Costo total (USD)"] = Number(a["Costo total (USD)"]).toFixed(2);
       a["Peso Biodiversidad"] = Number(a["Peso Biodiversidad"]).toFixed(2);
       a["Costo de oportunidad (USD)"] = Number(a["Costo de oportunidad (USD)"]).toFixed(2);
-      a["Peso Carbón"] = Number(a["Peso Carbón"]).toFixed(2);
+      a["Peso Carbono"] = Number(a["Peso Carbono"]).toFixed(2);
    });
    return transformed;
   }
@@ -77,7 +77,7 @@ let layout = {
    showlegend: false,
    hovermode: 'closest',
    xaxis: {
-       title: "Carbón (Gt)",
+       title: "Carbono (Gt)",
    },
    yaxis: {
        title: "Biodiversidad (%)",
@@ -124,12 +124,12 @@ let gridOptions = {
    columnDefs: [
       {"headerName":"Color","field":"RBGcode", "headerTooltip":"Color en el gráfico", "width": 10, "cellStyle": cellStyle},
       {"headerName":"Escenario","field":"Escenario", "headerTooltip":"Escenario", "width": 170, "minWidth": 50, "maxWidth": 170},
-      {"headerName":"Carbón (Gt)","field":"Carbón (Gt)", "headerTooltip":"Carbón (Gt)", "width": 100 },
+      {"headerName":"Carbono (Gt)","field":"Carbono (Gt)", "headerTooltip":"Carbono (Gt)", "width": 100 },
       {"headerName":"Biodiversidad (%)","field":"Biodiversidad (%)", "headerTooltip":"Biodiversidad (%)", "width": 120 },
       {"headerName":"Costo de oportunidad (USD)","field":"Costo de oportunidad (USD)", "headerTooltip":"Costo de oportunidad (USD)", "width": 100 },
       {"headerName":"Costo de establecimiento (USD)","field":"Costo de establecimiento (USD)", "headerTooltip":"Costo de establecimiento (USD)", "width": 100 },
       {"headerName":"Costo total (USD)","field":"Costo total (USD)", "headerTooltip":"Costo total (USD)", "width": 110 },
-      {"headerName":"Peso Carbón","field":"Peso Carbón", "headerTooltip":"Peso Carbón", "width": 100 },
+      {"headerName":"Peso Carbono","field":"Peso Carbono", "headerTooltip":"Peso Carbono", "width": 100 },
       {"headerName":"Peso Biodiversidad","field":"Peso Biodiversidad", "headerTooltip":"Peso Biodiversidad", "width": 100 }],
    rowData: twoDecimals(originalRowData0),
    rowSelection: 'single',
